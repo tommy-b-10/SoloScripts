@@ -39,16 +39,15 @@ These instructions are for first time installs of the Green Cube and ArduCopter 
 8. **Power up the Solo and reconnect to controller:** Put the battery onto the solo. It will just sit atop the carrier board. Obviously you should avoid manhandling the Solo while like this since the battery can just fall off. So get everything situated first.  Turn on the battery.  The solo will power up as usual. After a short while, the Solo will reconnect with the controller as usual. It will probably give you all kinds of warnings about calibration. This is normal and expected.
 
 9. **Load the firmware and files using SidePilot**
- * In SidePilot, connect to Solo and navigate to the Firmware Updates screen. Download the updated package once more.
- * With the SidePilot app reconnected to the Solo, navigate to the Parameters menu and tap 'Load Params'. You should see the loading bar moving across the screen until all parameters appear.
- * Navigate back to the Firmware update screen and click the `Reset Parameters` button. This may take a while. When prompted, power off the Solo and power it back on.
- * Installation complete!
+ * In SidePilot, connect to Solo and navigate to the Firmware Updates screen. You may need to download the updated package once more.
   * **Wipe The Pixhawk:** In the SidePilot firmware update menu, tap the `Wipe Firmware` button. All the files will be copied to the Solo in all the right places. When prompted, power cycle the Solo. It will reboot, then switch into bootloader mode. Normally you will see disco lights while it's doing this. But if the LED driver isn't enabled, you may not. Don't worry. It's working. Give it 3-5 minutes to process. You may hear some clicks as the Pixhawk reboots. After 3-5 minutes, you will hear some tones signalling completion. It will come back to life, reconnecting with the controller and SidePilot. 
  * **Install ArduCopter:** In the SidePilot firmware update menu, tap the `Install Update` button. All the files will be copied to the Solo in all the right places. When prompted, power cycle the Solo. It will reboot, then switch into bootloader mode. Normally you will see disco lights while it's doing this. But if the LED driver isn't enabled, you may not. Don't worry. It's working. Give it 3-5 minutes to process. You may hear some clicks as the Pixhawk reboots. After 3-5 minutes, you will hear some tones signalling completion. It will come back to life, reconnecting with the controller and SidePilot. 
- * **Reset Parameters:** With the SidePilot app reconnected to the Solo, click the `Reset Params` button on the firmware update screen of SidePilot. When prompted, power cycle the solo.
+ * **Reset Parameters:** With the SidePilot app reconnected to the Solo, click the `Reset Params` button on the firmware update screen of SidePilot. When completed, power cycle the solo.
  * **Complete:** The solo will reboot and reconnect to the controller and app.  You will notice the LEDs now look like an aircraft rather than a car. Installation complete!
  
     _If the Solo doesn't seem to complete the installation after about 5 minutes, power off the Solo and power it back on.  A few people have experienced this. It took a few power cycles to get it go through. It is unknown why this happens.  But in those cases, power cycling 1-4 times got it to go._
+    
+    _If some part of the update fails, DO NOT factory reset your Solo with the GC installed, replace the stock Pixhawk flight controller before resetting._
 
 10. **Reassemble the Solo** once the installation has completed successfully. Make sure you don't have any screws left over.  Make sure all the wires, including the GPS, are plugged back in.
 
